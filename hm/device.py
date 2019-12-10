@@ -1,4 +1,4 @@
-class Room:
+class Device:
     def __init__(self, name, ise_id, channels):
         self.name = name
         self.ise_id = ise_id
