@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<deviceList>
+    <device name='EG_Flur_Temp_Feuchte' address='000E5A498E1549' ise_id='1390' interface='HmIP-RF'
+            device_type='HmIP-STH' ready_config='true'>
+        <channel name='EG_Flur_Temp_Feuchte:0' type='30' address='000E5A498E1549:0' ise_id='1391' direction='UNKNOWN'
+                 parent_device='1390' index='0' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E1549:1' type='17' address='000E5A498E1549:1' ise_id='1414' direction='SENDER'
+                 parent_device='1390' index='1' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E1549:2' type='17' address='000E5A498E1549:2' ise_id='1437'
+                 direction='RECEIVER' parent_device='1390' index='2' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E1549:3' type='17' address='000E5A498E1549:3' ise_id='1438' direction='SENDER'
+                 parent_device='1390' index='3' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E1549:4' type='37' address='000E5A498E1549:4' ise_id='1439'
+                 direction='RECEIVER' parent_device='1390' index='4' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E1549:5' type='26' address='000E5A498E1549:5' ise_id='1440' direction='SENDER'
+                 parent_device='1390' index='5' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E1549:6' type='17' address='000E5A498E1549:6' ise_id='1441'
+                 direction='RECEIVER' parent_device='1390' index='6' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E1549:7' type='17' address='000E5A498E1549:7' ise_id='1442' direction='SENDER'
+                 parent_device='1390' index='7' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+    </device>
+    <device name='EG_Küche_Temp_Feuchte 1' address='000A1A499B9DF8' ise_id='2713' interface='HmIP-RF'
+            device_type='HmIP-eTRV-2' ready_config='true'>
+        <channel name='EG_Küche_Temp_Feuchte 1:0' type='30' address='000A1A499B9DF8:0' ise_id='2714' direction='UNKNOWN'
+                 parent_device='2713' index='0' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-eTRV-2 000A1A499B9DF8:1' type='17' address='000A1A499B9DF8:1' ise_id='2737'
+                 direction='SENDER' parent_device='2713' index='1' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-eTRV-2 000A1A499B9DF8:2' type='17' address='000A1A499B9DF8:2' ise_id='2761'
+                 direction='RECEIVER' parent_device='2713' index='2' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-eTRV-2 000A1A499B9DF8:3' type='17' address='000A1A499B9DF8:3' ise_id='2762'
+                 direction='RECEIVER' parent_device='2713' index='3' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-eTRV-2 000A1A499B9DF8:4' type='37' address='000A1A499B9DF8:4' ise_id='2763'
+                 direction='RECEIVER' parent_device='2713' index='4' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-eTRV-2 000A1A499B9DF8:5' type='17' address='000A1A499B9DF8:5' ise_id='2764'
+                 direction='SENDER' parent_device='2713' index='5' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-eTRV-2 000A1A499B9DF8:6' type='17' address='000A1A499B9DF8:6' ise_id='2765'
+                 direction='RECEIVER' parent_device='2713' index='6' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-eTRV-2 000A1A499B9DF8:7' type='17' address='000A1A499B9DF8:7' ise_id='2766'
+                 direction='RECEIVER' parent_device='2713' index='7' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+    </device>
+    <device name='EG_WC_Temp_Feuchte' address='000E5A498E0B24' ise_id='2660' interface='HmIP-RF' device_type='HmIP-STH'
+            ready_config='true'>
+        <channel name='EG_WC_Temp_Feuchte:0' type='30' address='000E5A498E0B24:0' ise_id='2661' direction='UNKNOWN'
+                 parent_device='2660' index='0' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0B24:1' type='17' address='000E5A498E0B24:1' ise_id='2684' direction='SENDER'
+                 parent_device='2660' index='1' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0B24:2' type='17' address='000E5A498E0B24:2' ise_id='2707'
+                 direction='RECEIVER' parent_device='2660' index='2' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0B24:3' type='17' address='000E5A498E0B24:3' ise_id='2708' direction='SENDER'
+                 parent_device='2660' index='3' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0B24:4' type='37' address='000E5A498E0B24:4' ise_id='2709'
+                 direction='RECEIVER' parent_device='2660' index='4' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0B24:5' type='26' address='000E5A498E0B24:5' ise_id='2710' direction='SENDER'
+                 parent_device='2660' index='5' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0B24:6' type='17' address='000E5A498E0B24:6' ise_id='2711'
+                 direction='RECEIVER' parent_device='2660' index='6' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0B24:7' type='17' address='000E5A498E0B24:7' ise_id='2712' direction='SENDER'
+                 parent_device='2660' index='7' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+    </device>
+    <device name='EG_Wohnz_Temp_Feuchte' address='000E5A498E1795' ise_id='1451' interface='HmIP-RF'
+            device_type='HmIP-STH' ready_config='true'>
+        <channel name='EG_Wohnz_Temp_Feuchte:0' type='30' address='000E5A498E1795:0' ise_id='1452' direction='UNKNOWN'
+                 parent_device='1451' index='0' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E1795:1' type='17' address='000E5A498E1795:1' ise_id='1475' direction='SENDER'
+                 parent_device='1451' index='1' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E1795:2' type='17' address='000E5A498E1795:2' ise_id='1498'
+                 direction='RECEIVER' parent_device='1451' index='2' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E1795:3' type='17' address='000E5A498E1795:3' ise_id='1499' direction='SENDER'
+                 parent_device='1451' index='3' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E1795:4' type='37' address='000E5A498E1795:4' ise_id='1500'
+                 direction='RECEIVER' parent_device='1451' index='4' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E1795:5' type='26' address='000E5A498E1795:5' ise_id='1501' direction='SENDER'
+                 parent_device='1451' index='5' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E1795:6' type='17' address='000E5A498E1795:6' ise_id='1502'
+                 direction='RECEIVER' parent_device='1451' index='6' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E1795:7' type='17' address='000E5A498E1795:7' ise_id='1503' direction='SENDER'
+                 parent_device='1451' index='7' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+    </device>
+    <device name='HmIP-FALMOT-C12 001B9A498CF971' address='001B9A498CF971' ise_id='1969' interface='HmIP-RF'
+            device_type='HmIP-FALMOT-C12' ready_config='true'>
+        <channel name='HmIP-FALMOT-C12 001B9A498CF971:0' type='30' address='001B9A498CF971:0' ise_id='1970'
+                 direction='UNKNOWN' parent_device='1969' index='0' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-FALMOT-C12 001B9A498CF971:1' type='17' address='001B9A498CF971:1' ise_id='1993'
+                 direction='RECEIVER' parent_device='1969' index='1' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-FALMOT-C12 001B9A498CF971:2' type='17' address='001B9A498CF971:2' ise_id='2002'
+                 direction='RECEIVER' parent_device='1969' index='2' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-FALMOT-C12 001B9A498CF971:3' type='17' address='001B9A498CF971:3' ise_id='2011'
+                 direction='RECEIVER' parent_device='1969' index='3' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-FALMOT-C12 001B9A498CF971:4' type='17' address='001B9A498CF971:4' ise_id='2020'
+                 direction='RECEIVER' parent_device='1969' index='4' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-FALMOT-C12 001B9A498CF971:5' type='17' address='001B9A498CF971:5' ise_id='2029'
+                 direction='RECEIVER' parent_device='1969' index='5' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-FALMOT-C12 001B9A498CF971:6' type='17' address='001B9A498CF971:6' ise_id='2038'
+                 direction='RECEIVER' parent_device='1969' index='6' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-FALMOT-C12 001B9A498CF971:7' type='17' address='001B9A498CF971:7' ise_id='2047'
+                 direction='RECEIVER' parent_device='1969' index='7' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-FALMOT-C12 001B9A498CF971:8' type='17' address='001B9A498CF971:8' ise_id='2056'
+                 direction='RECEIVER' parent_device='1969' index='8' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-FALMOT-C12 001B9A498CF971:9' type='17' address='001B9A498CF971:9' ise_id='2065'
+                 direction='RECEIVER' parent_device='1969' index='9' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-FALMOT-C12 001B9A498CF971:10' type='17' address='001B9A498CF971:10' ise_id='2074'
+                 direction='RECEIVER' parent_device='1969' index='10' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-FALMOT-C12 001B9A498CF971:11' type='17' address='001B9A498CF971:11' ise_id='2083'
+                 direction='RECEIVER' parent_device='1969' index='11' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-FALMOT-C12 001B9A498CF971:12' type='17' address='001B9A498CF971:12' ise_id='2092'
+                 direction='RECEIVER' parent_device='1969' index='12' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-FALMOT-C12 001B9A498CF971:13' type='17' address='001B9A498CF971:13' ise_id='2101'
+                 direction='SENDER' parent_device='1969' index='13' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-FALMOT-C12 001B9A498CF971:14' type='17' address='001B9A498CF971:14' ise_id='2102'
+                 direction='SENDER' parent_device='1969' index='14' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-FALMOT-C12 001B9A498CF971:15' type='17' address='001B9A498CF971:15' ise_id='2103'
+                 direction='SENDER' parent_device='1969' index='15' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-FALMOT-C12 001B9A498CF971:16' type='28' address='001B9A498CF971:16' ise_id='2104'
+                 direction='RECEIVER' parent_device='1969' index='16' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+    </device>
+    <device name='HmIP-FALMOT-C12 001B9A498CFE63' address='001B9A498CFE63' ise_id='2490' interface='HmIP-RF'
+            device_type='HmIP-FALMOT-C12' ready_config='true'>
+        <channel name='HmIP-FALMOT-C12 001B9A498CFE63:0' type='30' address='001B9A498CFE63:0' ise_id='2491'
+                 direction='UNKNOWN' parent_device='2490' index='0' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-FALMOT-C12 001B9A498CFE63:1' type='17' address='001B9A498CFE63:1' ise_id='2514'
+                 direction='RECEIVER' parent_device='2490' index='1' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-FALMOT-C12 001B9A498CFE63:2' type='17' address='001B9A498CFE63:2' ise_id='2523'
+                 direction='RECEIVER' parent_device='2490' index='2' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-FALMOT-C12 001B9A498CFE63:3' type='17' address='001B9A498CFE63:3' ise_id='2532'
+                 direction='RECEIVER' parent_device='2490' index='3' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-FALMOT-C12 001B9A498CFE63:4' type='17' address='001B9A498CFE63:4' ise_id='2541'
+                 direction='RECEIVER' parent_device='2490' index='4' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-FALMOT-C12 001B9A498CFE63:5' type='17' address='001B9A498CFE63:5' ise_id='2550'
+                 direction='RECEIVER' parent_device='2490' index='5' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-FALMOT-C12 001B9A498CFE63:6' type='17' address='001B9A498CFE63:6' ise_id='2559'
+                 direction='RECEIVER' parent_device='2490' index='6' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-FALMOT-C12 001B9A498CFE63:7' type='17' address='001B9A498CFE63:7' ise_id='2568'
+                 direction='RECEIVER' parent_device='2490' index='7' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-FALMOT-C12 001B9A498CFE63:8' type='17' address='001B9A498CFE63:8' ise_id='2577'
+                 direction='RECEIVER' parent_device='2490' index='8' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-FALMOT-C12 001B9A498CFE63:9' type='17' address='001B9A498CFE63:9' ise_id='2586'
+                 direction='RECEIVER' parent_device='2490' index='9' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-FALMOT-C12 001B9A498CFE63:10' type='17' address='001B9A498CFE63:10' ise_id='2595'
+                 direction='RECEIVER' parent_device='2490' index='10' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-FALMOT-C12 001B9A498CFE63:11' type='17' address='001B9A498CFE63:11' ise_id='2604'
+                 direction='RECEIVER' parent_device='2490' index='11' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-FALMOT-C12 001B9A498CFE63:12' type='17' address='001B9A498CFE63:12' ise_id='2613'
+                 direction='RECEIVER' parent_device='2490' index='12' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-FALMOT-C12 001B9A498CFE63:13' type='17' address='001B9A498CFE63:13' ise_id='2622'
+                 direction='SENDER' parent_device='2490' index='13' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-FALMOT-C12 001B9A498CFE63:14' type='17' address='001B9A498CFE63:14' ise_id='2623'
+                 direction='SENDER' parent_device='2490' index='14' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-FALMOT-C12 001B9A498CFE63:15' type='17' address='001B9A498CFE63:15' ise_id='2624'
+                 direction='SENDER' parent_device='2490' index='15' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-FALMOT-C12 001B9A498CFE63:16' type='28' address='001B9A498CFE63:16' ise_id='2625'
+                 direction='RECEIVER' parent_device='2490' index='16' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+    </device>
+    <device name='HmIP-STHO 000EDA4995B286' address='000EDA4995B286' ise_id='2626' interface='HmIP-RF'
+            device_type='HmIP-STHO' ready_config='true'>
+        <channel name='HmIP-STHO 000EDA4995B286:0' type='30' address='000EDA4995B286:0' ise_id='2627'
+                 direction='UNKNOWN' parent_device='2626' index='0' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STHO 000EDA4995B286:1' type='17' address='000EDA4995B286:1' ise_id='2652'
+                 direction='UNKNOWN' parent_device='2626' index='1' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STHO 000EDA4995B286:2' type='26' address='000EDA4995B286:2' ise_id='2657' direction='SENDER'
+                 parent_device='2626' index='2' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STHO 000EDA4995B286:3' type='26' address='000EDA4995B286:3' ise_id='2658' direction='SENDER'
+                 parent_device='2626' index='3' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+    </device>
+    <device name='HMIP-SWDO 0000DA49926201' address='0000DA49926201' ise_id='2457' interface='HmIP-RF'
+            device_type='HMIP-SWDO' ready_config='true'>
+        <channel name='HMIP-SWDO 0000DA49926201:0' type='30' address='0000DA49926201:0' ise_id='2458'
+                 direction='UNKNOWN' parent_device='2457' index='0' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HMIP-SWDO 0000DA49926201:1' type='37' address='0000DA49926201:1' ise_id='2486' direction='SENDER'
+                 parent_device='2457' index='1' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HMIP-SWDO 0000DA49926201:2' type='26' address='0000DA49926201:2' ise_id='2488'
+                 direction='UNKNOWN' parent_device='2457' index='2' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='false' ready_config='true' operate='true'/>
+    </device>
+    <device name='OG_Bad_Temp_Feuchte' address='000E5A498E0D21' ise_id='2320' interface='HmIP-RF' device_type='HmIP-STH'
+            ready_config='true'>
+        <channel name='OG_Bad_Temp_Feuchte:0' type='30' address='000E5A498E0D21:0' ise_id='2321' direction='UNKNOWN'
+                 parent_device='2320' index='0' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D21:1' type='17' address='000E5A498E0D21:1' ise_id='2344' direction='SENDER'
+                 parent_device='2320' index='1' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D21:2' type='17' address='000E5A498E0D21:2' ise_id='2367'
+                 direction='RECEIVER' parent_device='2320' index='2' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D21:3' type='17' address='000E5A498E0D21:3' ise_id='2368' direction='SENDER'
+                 parent_device='2320' index='3' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D21:4' type='37' address='000E5A498E0D21:4' ise_id='2369'
+                 direction='RECEIVER' parent_device='2320' index='4' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D21:5' type='26' address='000E5A498E0D21:5' ise_id='2370' direction='SENDER'
+                 parent_device='2320' index='5' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D21:6' type='17' address='000E5A498E0D21:6' ise_id='2371'
+                 direction='RECEIVER' parent_device='2320' index='6' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D21:7' type='17' address='000E5A498E0D21:7' ise_id='2372' direction='SENDER'
+                 parent_device='2320' index='7' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+    </device>
+    <device name='OG_Büro_Temp_Feuchte' address='000E5A498E0D50' ise_id='2266' interface='HmIP-RF'
+            device_type='HmIP-STH' ready_config='true'>
+        <channel name='OG_Büro_Temp_Feuchte:0' type='30' address='000E5A498E0D50:0' ise_id='2267' direction='UNKNOWN'
+                 parent_device='2266' index='0' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D50:1' type='17' address='000E5A498E0D50:1' ise_id='2290' direction='SENDER'
+                 parent_device='2266' index='1' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D50:2' type='17' address='000E5A498E0D50:2' ise_id='2313'
+                 direction='RECEIVER' parent_device='2266' index='2' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D50:3' type='17' address='000E5A498E0D50:3' ise_id='2314' direction='SENDER'
+                 parent_device='2266' index='3' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D50:4' type='37' address='000E5A498E0D50:4' ise_id='2315'
+                 direction='RECEIVER' parent_device='2266' index='4' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D50:5' type='26' address='000E5A498E0D50:5' ise_id='2316' direction='SENDER'
+                 parent_device='2266' index='5' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D50:6' type='17' address='000E5A498E0D50:6' ise_id='2317'
+                 direction='RECEIVER' parent_device='2266' index='6' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D50:7' type='17' address='000E5A498E0D50:7' ise_id='2318' direction='SENDER'
+                 parent_device='2266' index='7' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+    </device>
+    <device name='OG_Flur_Temp_Feuchte' address='000E5A498E0D44' ise_id='2213' interface='HmIP-RF'
+            device_type='HmIP-STH' ready_config='true'>
+        <channel name='OG_Flur_Temp_Feuchte:0' type='30' address='000E5A498E0D44:0' ise_id='2214' direction='UNKNOWN'
+                 parent_device='2213' index='0' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D44:1' type='17' address='000E5A498E0D44:1' ise_id='2237' direction='SENDER'
+                 parent_device='2213' index='1' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D44:2' type='17' address='000E5A498E0D44:2' ise_id='2260'
+                 direction='RECEIVER' parent_device='2213' index='2' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D44:3' type='17' address='000E5A498E0D44:3' ise_id='2261' direction='SENDER'
+                 parent_device='2213' index='3' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D44:4' type='37' address='000E5A498E0D44:4' ise_id='2262'
+                 direction='RECEIVER' parent_device='2213' index='4' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D44:5' type='26' address='000E5A498E0D44:5' ise_id='2263' direction='SENDER'
+                 parent_device='2213' index='5' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D44:6' type='17' address='000E5A498E0D44:6' ise_id='2264'
+                 direction='RECEIVER' parent_device='2213' index='6' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D44:7' type='17' address='000E5A498E0D44:7' ise_id='2265' direction='SENDER'
+                 parent_device='2213' index='7' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+    </device>
+    <device name='OG_Schlaf fb_Temp_Feuchte' address='000E5A498E0D2F' ise_id='2160' interface='HmIP-RF'
+            device_type='HmIP-STH' ready_config='true'>
+        <channel name='OG_Schlaf fb_Temp_Feuchte:0' type='30' address='000E5A498E0D2F:0' ise_id='2161'
+                 direction='UNKNOWN' parent_device='2160' index='0' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D2F:1' type='17' address='000E5A498E0D2F:1' ise_id='2184' direction='SENDER'
+                 parent_device='2160' index='1' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D2F:2' type='17' address='000E5A498E0D2F:2' ise_id='2207'
+                 direction='RECEIVER' parent_device='2160' index='2' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D2F:3' type='17' address='000E5A498E0D2F:3' ise_id='2208' direction='SENDER'
+                 parent_device='2160' index='3' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D2F:4' type='37' address='000E5A498E0D2F:4' ise_id='2209'
+                 direction='RECEIVER' parent_device='2160' index='4' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D2F:5' type='26' address='000E5A498E0D2F:5' ise_id='2210' direction='SENDER'
+                 parent_device='2160' index='5' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D2F:6' type='17' address='000E5A498E0D2F:6' ise_id='2211'
+                 direction='RECEIVER' parent_device='2160' index='6' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D2F:7' type='17' address='000E5A498E0D2F:7' ise_id='2212' direction='SENDER'
+                 parent_device='2160' index='7' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+    </device>
+    <device name='OG_Schlaf_Verena_Temp_Feuchte' address='000E5A498E148B' ise_id='1504' interface='HmIP-RF'
+            device_type='HmIP-STH' ready_config='true'>
+        <channel name='OG_Schlaf_Verena_Temp_Feuchte:0' type='30' address='000E5A498E148B:0' ise_id='1505'
+                 direction='UNKNOWN' parent_device='1504' index='0' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E148B:1' type='17' address='000E5A498E148B:1' ise_id='1528' direction='SENDER'
+                 parent_device='1504' index='1' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E148B:2' type='17' address='000E5A498E148B:2' ise_id='1551'
+                 direction='RECEIVER' parent_device='1504' index='2' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E148B:3' type='17' address='000E5A498E148B:3' ise_id='1552' direction='SENDER'
+                 parent_device='1504' index='3' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E148B:4' type='37' address='000E5A498E148B:4' ise_id='1553'
+                 direction='RECEIVER' parent_device='1504' index='4' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E148B:5' type='26' address='000E5A498E148B:5' ise_id='1554' direction='SENDER'
+                 parent_device='1504' index='5' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E148B:6' type='17' address='000E5A498E148B:6' ise_id='1555'
+                 direction='RECEIVER' parent_device='1504' index='6' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E148B:7' type='17' address='000E5A498E148B:7' ise_id='1556' direction='SENDER'
+                 parent_device='1504' index='7' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+    </device>
+    <device name='OG_WC_Temp_Feuchte' address='000E5A498E0D51' ise_id='2373' interface='HmIP-RF' device_type='HmIP-STH'
+            ready_config='true'>
+        <channel name='OG_WC_Temp_Feuchte:0' type='30' address='000E5A498E0D51:0' ise_id='2374' direction='UNKNOWN'
+                 parent_device='2373' index='0' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D51:1' type='17' address='000E5A498E0D51:1' ise_id='2397' direction='SENDER'
+                 parent_device='2373' index='1' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D51:2' type='17' address='000E5A498E0D51:2' ise_id='2420'
+                 direction='RECEIVER' parent_device='2373' index='2' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D51:3' type='17' address='000E5A498E0D51:3' ise_id='2421' direction='SENDER'
+                 parent_device='2373' index='3' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D51:4' type='37' address='000E5A498E0D51:4' ise_id='2422'
+                 direction='RECEIVER' parent_device='2373' index='4' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D51:5' type='26' address='000E5A498E0D51:5' ise_id='2423' direction='SENDER'
+                 parent_device='2373' index='5' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D51:6' type='17' address='000E5A498E0D51:6' ise_id='2424'
+                 direction='RECEIVER' parent_device='2373' index='6' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D51:7' type='17' address='000E5A498E0D51:7' ise_id='2425' direction='SENDER'
+                 parent_device='2373' index='7' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+    </device>
+    <device name='Steckdose Heizung' address='0001D3C99C4B30' ise_id='2767' interface='HmIP-RF' device_type='HMIP-PSM'
+            ready_config='true'>
+        <channel name='Steckdose Heizung:0' type='30' address='0001D3C99C4B30:0' ise_id='2768' direction='UNKNOWN'
+                 parent_device='2767' index='0' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HMIP-PSM 0001D3C99C4B30:1' type='17' address='0001D3C99C4B30:1' ise_id='2787' direction='SENDER'
+                 parent_device='2767' index='1' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HMIP-PSM 0001D3C99C4B30:2' type='26' address='0001D3C99C4B30:2' ise_id='2790' direction='UNKNOWN'
+                 parent_device='2767' index='2' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HMIP-PSM 0001D3C99C4B30:3' type='26' address='0001D3C99C4B30:3' ise_id='2795'
+                 direction='RECEIVER' parent_device='2767' index='3' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HMIP-PSM 0001D3C99C4B30:4' type='26' address='0001D3C99C4B30:4' ise_id='2801'
+                 direction='RECEIVER' parent_device='2767' index='4' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HMIP-PSM 0001D3C99C4B30:5' type='26' address='0001D3C99C4B30:5' ise_id='2807'
+                 direction='RECEIVER' parent_device='2767' index='5' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HMIP-PSM 0001D3C99C4B30:6' type='17' address='0001D3C99C4B30:6' ise_id='2813' direction='UNKNOWN'
+                 parent_device='2767' index='6' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HMIP-PSM 0001D3C99C4B30:7' type='26' address='0001D3C99C4B30:7' ise_id='2824' direction='SENDER'
+                 parent_device='2767' index='7' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HMIP-PSM 0001D3C99C4B30:8' type='26' address='0001D3C99C4B30:8' ise_id='2852' direction='UNKNOWN'
+                 parent_device='2767' index='8' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+    </device>
+    <device name='Steckdose Lüfter HWR' address='0001D3C99CA760' ise_id='2881' interface='HmIP-RF'
+            device_type='HMIP-PSM' ready_config='true'>
+        <channel name='Steckdose Lüfter HWR:0' type='30' address='0001D3C99CA760:0' ise_id='2882' direction='UNKNOWN'
+                 parent_device='2881' index='0' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HMIP-PSM 0001D3C99CA760:1' type='17' address='0001D3C99CA760:1' ise_id='2901' direction='SENDER'
+                 parent_device='2881' index='1' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HMIP-PSM 0001D3C99CA760:2' type='26' address='0001D3C99CA760:2' ise_id='2904' direction='UNKNOWN'
+                 parent_device='2881' index='2' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HMIP-PSM 0001D3C99CA760:3' type='26' address='0001D3C99CA760:3' ise_id='2909'
+                 direction='RECEIVER' parent_device='2881' index='3' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HMIP-PSM 0001D3C99CA760:4' type='26' address='0001D3C99CA760:4' ise_id='2915'
+                 direction='RECEIVER' parent_device='2881' index='4' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HMIP-PSM 0001D3C99CA760:5' type='26' address='0001D3C99CA760:5' ise_id='2921'
+                 direction='RECEIVER' parent_device='2881' index='5' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HMIP-PSM 0001D3C99CA760:6' type='17' address='0001D3C99CA760:6' ise_id='2927' direction='UNKNOWN'
+                 parent_device='2881' index='6' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HMIP-PSM 0001D3C99CA760:7' type='26' address='0001D3C99CA760:7' ise_id='2938' direction='SENDER'
+                 parent_device='2881' index='7' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HMIP-PSM 0001D3C99CA760:8' type='26' address='0001D3C99CA760:8' ise_id='3259' direction='UNKNOWN'
+                 parent_device='2881' index='8' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='false' operate='true'/>
+    </device>
+    <device name='Steckdose Test' address='0001D3C99CA79E' ise_id='2952' interface='HmIP-RF' device_type='HMIP-PSM'
+            ready_config='true'>
+        <channel name='Steckdose Test:0' type='30' address='0001D3C99CA79E:0' ise_id='2953' direction='UNKNOWN'
+                 parent_device='2952' index='0' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HMIP-PSM 0001D3C99CA79E:1' type='17' address='0001D3C99CA79E:1' ise_id='2972' direction='SENDER'
+                 parent_device='2952' index='1' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HMIP-PSM 0001D3C99CA79E:2' type='26' address='0001D3C99CA79E:2' ise_id='2975' direction='UNKNOWN'
+                 parent_device='2952' index='2' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HMIP-PSM 0001D3C99CA79E:3' type='26' address='0001D3C99CA79E:3' ise_id='2980'
+                 direction='RECEIVER' parent_device='2952' index='3' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HMIP-PSM 0001D3C99CA79E:4' type='26' address='0001D3C99CA79E:4' ise_id='2986'
+                 direction='RECEIVER' parent_device='2952' index='4' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HMIP-PSM 0001D3C99CA79E:5' type='26' address='0001D3C99CA79E:5' ise_id='2992'
+                 direction='RECEIVER' parent_device='2952' index='5' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HMIP-PSM 0001D3C99CA79E:6' type='17' address='0001D3C99CA79E:6' ise_id='2998' direction='UNKNOWN'
+                 parent_device='2952' index='6' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HMIP-PSM 0001D3C99CA79E:7' type='26' address='0001D3C99CA79E:7' ise_id='3009' direction='SENDER'
+                 parent_device='2952' index='7' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HMIP-PSM 0001D3C99CA79E:8' type='26' address='0001D3C99CA79E:8' ise_id='3267' direction='UNKNOWN'
+                 parent_device='2952' index='8' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='false' operate='true'/>
+    </device>
+    <device name='UG_EW_Bad_Heizkörperthermostat' address='000A18A9AA60F2' ise_id='1702' interface='HmIP-RF'
+            device_type='HmIP-eTRV-2' ready_config='true'>
+        <channel name='UG_EW_Bad_Heizkörperthermostat:0' type='30' address='000A18A9AA60F2:0' ise_id='1703'
+                 direction='UNKNOWN' parent_device='1702' index='0' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-eTRV-2 000A18A9AA60F2:1' type='17' address='000A18A9AA60F2:1' ise_id='1726'
+                 direction='SENDER' parent_device='1702' index='1' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-eTRV-2 000A18A9AA60F2:2' type='17' address='000A18A9AA60F2:2' ise_id='1750'
+                 direction='RECEIVER' parent_device='1702' index='2' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-eTRV-2 000A18A9AA60F2:3' type='17' address='000A18A9AA60F2:3' ise_id='1751'
+                 direction='RECEIVER' parent_device='1702' index='3' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-eTRV-2 000A18A9AA60F2:4' type='37' address='000A18A9AA60F2:4' ise_id='1752'
+                 direction='RECEIVER' parent_device='1702' index='4' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-eTRV-2 000A18A9AA60F2:5' type='17' address='000A18A9AA60F2:5' ise_id='1753'
+                 direction='SENDER' parent_device='1702' index='5' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-eTRV-2 000A18A9AA60F2:6' type='17' address='000A18A9AA60F2:6' ise_id='1754'
+                 direction='RECEIVER' parent_device='1702' index='6' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-eTRV-2 000A18A9AA60F2:7' type='17' address='000A18A9AA60F2:7' ise_id='1755'
+                 direction='RECEIVER' parent_device='1702' index='7' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+    </device>
+    <device name='UG_EW_Bad_Temp_Feuchte' address='000E5A498E11B8' ise_id='1557' interface='HmIP-RF'
+            device_type='HmIP-STH' ready_config='true'>
+        <channel name='UG_EW_Bad_Temp_Feuchte:0' type='30' address='000E5A498E11B8:0' ise_id='1558' direction='UNKNOWN'
+                 parent_device='1557' index='0' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E11B8:1' type='17' address='000E5A498E11B8:1' ise_id='1581' direction='SENDER'
+                 parent_device='1557' index='1' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E11B8:2' type='17' address='000E5A498E11B8:2' ise_id='1604'
+                 direction='RECEIVER' parent_device='1557' index='2' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E11B8:3' type='17' address='000E5A498E11B8:3' ise_id='1605' direction='SENDER'
+                 parent_device='1557' index='3' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E11B8:4' type='37' address='000E5A498E11B8:4' ise_id='1606'
+                 direction='RECEIVER' parent_device='1557' index='4' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E11B8:5' type='26' address='000E5A498E11B8:5' ise_id='1607' direction='SENDER'
+                 parent_device='1557' index='5' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E11B8:6' type='17' address='000E5A498E11B8:6' ise_id='1608'
+                 direction='RECEIVER' parent_device='1557' index='6' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E11B8:7' type='17' address='000E5A498E11B8:7' ise_id='1609' direction='SENDER'
+                 parent_device='1557' index='7' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+    </device>
+    <device name='UG_EW_Küche_Temp_Feuchte 1' address='000E5A498E0E20' ise_id='1757' interface='HmIP-RF'
+            device_type='HmIP-STH' ready_config='true'>
+        <channel name='UG_EW_Küche_Temp_Feuchte 1:0' type='30' address='000E5A498E0E20:0' ise_id='1758'
+                 direction='UNKNOWN' parent_device='1757' index='0' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0E20:1' type='17' address='000E5A498E0E20:1' ise_id='1781' direction='SENDER'
+                 parent_device='1757' index='1' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0E20:2' type='17' address='000E5A498E0E20:2' ise_id='1804'
+                 direction='RECEIVER' parent_device='1757' index='2' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0E20:3' type='17' address='000E5A498E0E20:3' ise_id='1805' direction='SENDER'
+                 parent_device='1757' index='3' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0E20:4' type='37' address='000E5A498E0E20:4' ise_id='1806'
+                 direction='RECEIVER' parent_device='1757' index='4' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0E20:5' type='26' address='000E5A498E0E20:5' ise_id='1807' direction='SENDER'
+                 parent_device='1757' index='5' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0E20:6' type='17' address='000E5A498E0E20:6' ise_id='1808'
+                 direction='RECEIVER' parent_device='1757' index='6' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0E20:7' type='17' address='000E5A498E0E20:7' ise_id='1809' direction='SENDER'
+                 parent_device='1757' index='7' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+    </device>
+    <device name='UG_EW_Schlaf_Temp_Feuchte' address='000E5A498E0D40' ise_id='2105' interface='HmIP-RF'
+            device_type='HmIP-STH' ready_config='true'>
+        <channel name='UG_EW_Schlaf_Temp_Feuchte:0' type='30' address='000E5A498E0D40:0' ise_id='2106'
+                 direction='UNKNOWN' parent_device='2105' index='0' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D40:1' type='17' address='000E5A498E0D40:1' ise_id='2129' direction='SENDER'
+                 parent_device='2105' index='1' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D40:2' type='17' address='000E5A498E0D40:2' ise_id='2152'
+                 direction='RECEIVER' parent_device='2105' index='2' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D40:3' type='17' address='000E5A498E0D40:3' ise_id='2153' direction='SENDER'
+                 parent_device='2105' index='3' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D40:4' type='37' address='000E5A498E0D40:4' ise_id='2154'
+                 direction='RECEIVER' parent_device='2105' index='4' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D40:5' type='26' address='000E5A498E0D40:5' ise_id='2155' direction='SENDER'
+                 parent_device='2105' index='5' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D40:6' type='17' address='000E5A498E0D40:6' ise_id='2156'
+                 direction='RECEIVER' parent_device='2105' index='6' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D40:7' type='17' address='000E5A498E0D40:7' ise_id='2157' direction='SENDER'
+                 parent_device='2105' index='7' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+    </device>
+    <device name='UG_Hauswirt_Temp_Feuchte' address='000E5A498E0D2E' ise_id='1810' interface='HmIP-RF'
+            device_type='HmIP-STH' ready_config='true'>
+        <channel name='UG_Hauswirt_Temp_Feuchte:0' type='30' address='000E5A498E0D2E:0' ise_id='1811'
+                 direction='UNKNOWN' parent_device='1810' index='0' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D2E:1' type='17' address='000E5A498E0D2E:1' ise_id='1834' direction='SENDER'
+                 parent_device='1810' index='1' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D2E:2' type='17' address='000E5A498E0D2E:2' ise_id='1857'
+                 direction='RECEIVER' parent_device='1810' index='2' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D2E:3' type='17' address='000E5A498E0D2E:3' ise_id='1858' direction='SENDER'
+                 parent_device='1810' index='3' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D2E:4' type='37' address='000E5A498E0D2E:4' ise_id='1859'
+                 direction='RECEIVER' parent_device='1810' index='4' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D2E:5' type='26' address='000E5A498E0D2E:5' ise_id='1860' direction='SENDER'
+                 parent_device='1810' index='5' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D2E:6' type='17' address='000E5A498E0D2E:6' ise_id='1861'
+                 direction='RECEIVER' parent_device='1810' index='6' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0D2E:7' type='17' address='000E5A498E0D2E:7' ise_id='1862' direction='SENDER'
+                 parent_device='1810' index='7' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+    </device>
+    <device name='UG_Hobby_Temp_Feuchte' address='000E5A498E0C63' ise_id='1863' interface='HmIP-RF'
+            device_type='HmIP-STH' ready_config='true'>
+        <channel name='UG_Hobby_Temp_Feuchte:0' type='30' address='000E5A498E0C63:0' ise_id='1864' direction='UNKNOWN'
+                 parent_device='1863' index='0' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0C63:1' type='17' address='000E5A498E0C63:1' ise_id='1887' direction='SENDER'
+                 parent_device='1863' index='1' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0C63:2' type='17' address='000E5A498E0C63:2' ise_id='1910'
+                 direction='RECEIVER' parent_device='1863' index='2' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0C63:3' type='17' address='000E5A498E0C63:3' ise_id='1911' direction='SENDER'
+                 parent_device='1863' index='3' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0C63:4' type='37' address='000E5A498E0C63:4' ise_id='1912'
+                 direction='RECEIVER' parent_device='1863' index='4' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0C63:5' type='26' address='000E5A498E0C63:5' ise_id='1913' direction='SENDER'
+                 parent_device='1863' index='5' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0C63:6' type='17' address='000E5A498E0C63:6' ise_id='1914'
+                 direction='RECEIVER' parent_device='1863' index='6' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0C63:7' type='17' address='000E5A498E0C63:7' ise_id='1915' direction='SENDER'
+                 parent_device='1863' index='7' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+    </device>
+    <device name='UG_Technik_Temp_Feuchte' address='000E5A498E0BB9' ise_id='1916' interface='HmIP-RF'
+            device_type='HmIP-STH' ready_config='true'>
+        <channel name='UG_Technik_Temp_Feuchte:0' type='30' address='000E5A498E0BB9:0' ise_id='1917' direction='UNKNOWN'
+                 parent_device='1916' index='0' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0BB9:1' type='17' address='000E5A498E0BB9:1' ise_id='1940' direction='SENDER'
+                 parent_device='1916' index='1' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0BB9:2' type='17' address='000E5A498E0BB9:2' ise_id='1963'
+                 direction='RECEIVER' parent_device='1916' index='2' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0BB9:3' type='17' address='000E5A498E0BB9:3' ise_id='1964' direction='SENDER'
+                 parent_device='1916' index='3' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0BB9:4' type='37' address='000E5A498E0BB9:4' ise_id='1965'
+                 direction='RECEIVER' parent_device='1916' index='4' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0BB9:5' type='26' address='000E5A498E0BB9:5' ise_id='1966' direction='SENDER'
+                 parent_device='1916' index='5' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0BB9:6' type='17' address='000E5A498E0BB9:6' ise_id='1967'
+                 direction='RECEIVER' parent_device='1916' index='6' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-STH 000E5A498E0BB9:7' type='17' address='000E5A498E0BB9:7' ise_id='1968' direction='SENDER'
+                 parent_device='1916' index='7' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+    </device>
+    <device name='Zentrale_HMIP-RCV-50' address='001F9A498C97C1' ise_id='1238' interface='HmIP-RF'
+            device_type='HmIP-RCV-50' ready_config='true'>
+        <channel name='Zentrale_HMIP-RCV-50:0' type='30' address='001F9A498C97C1:0' ise_id='1239' direction='UNKNOWN'
+                 parent_device='1238' index='0' group_partner='' aes_available='false' transmission_mode='AES'
+                 visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:1' type='17' address='001F9A498C97C1:1' ise_id='1240'
+                 direction='SENDER' parent_device='1238' index='1' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:2' type='17' address='001F9A498C97C1:2' ise_id='1243'
+                 direction='SENDER' parent_device='1238' index='2' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:3' type='17' address='001F9A498C97C1:3' ise_id='1246'
+                 direction='SENDER' parent_device='1238' index='3' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:4' type='17' address='001F9A498C97C1:4' ise_id='1249'
+                 direction='SENDER' parent_device='1238' index='4' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:5' type='17' address='001F9A498C97C1:5' ise_id='1252'
+                 direction='SENDER' parent_device='1238' index='5' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:6' type='17' address='001F9A498C97C1:6' ise_id='1255'
+                 direction='SENDER' parent_device='1238' index='6' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:7' type='17' address='001F9A498C97C1:7' ise_id='1258'
+                 direction='SENDER' parent_device='1238' index='7' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:8' type='17' address='001F9A498C97C1:8' ise_id='1261'
+                 direction='SENDER' parent_device='1238' index='8' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:9' type='17' address='001F9A498C97C1:9' ise_id='1264'
+                 direction='SENDER' parent_device='1238' index='9' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:10' type='17' address='001F9A498C97C1:10' ise_id='1267'
+                 direction='SENDER' parent_device='1238' index='10' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:11' type='17' address='001F9A498C97C1:11' ise_id='1270'
+                 direction='SENDER' parent_device='1238' index='11' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:12' type='17' address='001F9A498C97C1:12' ise_id='1273'
+                 direction='SENDER' parent_device='1238' index='12' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:13' type='17' address='001F9A498C97C1:13' ise_id='1276'
+                 direction='SENDER' parent_device='1238' index='13' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:14' type='17' address='001F9A498C97C1:14' ise_id='1279'
+                 direction='SENDER' parent_device='1238' index='14' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:15' type='17' address='001F9A498C97C1:15' ise_id='1282'
+                 direction='SENDER' parent_device='1238' index='15' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:16' type='17' address='001F9A498C97C1:16' ise_id='1285'
+                 direction='SENDER' parent_device='1238' index='16' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:17' type='17' address='001F9A498C97C1:17' ise_id='1288'
+                 direction='SENDER' parent_device='1238' index='17' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:18' type='17' address='001F9A498C97C1:18' ise_id='1291'
+                 direction='SENDER' parent_device='1238' index='18' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:19' type='17' address='001F9A498C97C1:19' ise_id='1294'
+                 direction='SENDER' parent_device='1238' index='19' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:20' type='17' address='001F9A498C97C1:20' ise_id='1297'
+                 direction='SENDER' parent_device='1238' index='20' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:21' type='17' address='001F9A498C97C1:21' ise_id='1300'
+                 direction='SENDER' parent_device='1238' index='21' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:22' type='17' address='001F9A498C97C1:22' ise_id='1303'
+                 direction='SENDER' parent_device='1238' index='22' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:23' type='17' address='001F9A498C97C1:23' ise_id='1306'
+                 direction='SENDER' parent_device='1238' index='23' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:24' type='17' address='001F9A498C97C1:24' ise_id='1309'
+                 direction='SENDER' parent_device='1238' index='24' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:25' type='17' address='001F9A498C97C1:25' ise_id='1312'
+                 direction='SENDER' parent_device='1238' index='25' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:26' type='17' address='001F9A498C97C1:26' ise_id='1315'
+                 direction='SENDER' parent_device='1238' index='26' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:27' type='17' address='001F9A498C97C1:27' ise_id='1318'
+                 direction='SENDER' parent_device='1238' index='27' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:28' type='17' address='001F9A498C97C1:28' ise_id='1321'
+                 direction='SENDER' parent_device='1238' index='28' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:29' type='17' address='001F9A498C97C1:29' ise_id='1324'
+                 direction='SENDER' parent_device='1238' index='29' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:30' type='17' address='001F9A498C97C1:30' ise_id='1327'
+                 direction='SENDER' parent_device='1238' index='30' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:31' type='17' address='001F9A498C97C1:31' ise_id='1330'
+                 direction='SENDER' parent_device='1238' index='31' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:32' type='17' address='001F9A498C97C1:32' ise_id='1333'
+                 direction='SENDER' parent_device='1238' index='32' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:33' type='17' address='001F9A498C97C1:33' ise_id='1336'
+                 direction='SENDER' parent_device='1238' index='33' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:34' type='17' address='001F9A498C97C1:34' ise_id='1339'
+                 direction='SENDER' parent_device='1238' index='34' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:35' type='17' address='001F9A498C97C1:35' ise_id='1342'
+                 direction='SENDER' parent_device='1238' index='35' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:36' type='17' address='001F9A498C97C1:36' ise_id='1345'
+                 direction='SENDER' parent_device='1238' index='36' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:37' type='17' address='001F9A498C97C1:37' ise_id='1348'
+                 direction='SENDER' parent_device='1238' index='37' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:38' type='17' address='001F9A498C97C1:38' ise_id='1351'
+                 direction='SENDER' parent_device='1238' index='38' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:39' type='17' address='001F9A498C97C1:39' ise_id='1354'
+                 direction='SENDER' parent_device='1238' index='39' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:40' type='17' address='001F9A498C97C1:40' ise_id='1357'
+                 direction='SENDER' parent_device='1238' index='40' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:41' type='17' address='001F9A498C97C1:41' ise_id='1360'
+                 direction='SENDER' parent_device='1238' index='41' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:42' type='17' address='001F9A498C97C1:42' ise_id='1363'
+                 direction='SENDER' parent_device='1238' index='42' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:43' type='17' address='001F9A498C97C1:43' ise_id='1366'
+                 direction='SENDER' parent_device='1238' index='43' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:44' type='17' address='001F9A498C97C1:44' ise_id='1369'
+                 direction='SENDER' parent_device='1238' index='44' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:45' type='17' address='001F9A498C97C1:45' ise_id='1372'
+                 direction='SENDER' parent_device='1238' index='45' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:46' type='17' address='001F9A498C97C1:46' ise_id='1375'
+                 direction='SENDER' parent_device='1238' index='46' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:47' type='17' address='001F9A498C97C1:47' ise_id='1378'
+                 direction='SENDER' parent_device='1238' index='47' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:48' type='17' address='001F9A498C97C1:48' ise_id='1381'
+                 direction='SENDER' parent_device='1238' index='48' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:49' type='17' address='001F9A498C97C1:49' ise_id='1384'
+                 direction='SENDER' parent_device='1238' index='49' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+        <channel name='HmIP-RCV-50 001F9A498C97C1:50' type='17' address='001F9A498C97C1:50' ise_id='1387'
+                 direction='SENDER' parent_device='1238' index='50' group_partner='' aes_available='false'
+                 transmission_mode='AES' visible='true' ready_config='true' operate='true'/>
+    </device>
+</deviceList>
