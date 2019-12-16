@@ -12,7 +12,7 @@ class Roomlist(BaseList):
 
         for r in roomlist:
             room_name = r.attrib['name']
-            ise_id = 1
+            ise_id = r.attrib['ise_id']
             channels = []
             for c in r:
                 channels.append(c.attrib['ise_id'])
