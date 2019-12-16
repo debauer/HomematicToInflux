@@ -1,7 +1,7 @@
 init:
 	pip install -r requirements.txt
 run:
-	python hmtoinflux/core.py
+	python -m hmtoinflux
 test:
 	python -m unittest discover -v
 build:
