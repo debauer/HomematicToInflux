@@ -1,6 +1,6 @@
 # HomematicToInflux
 
-##project structure
+## project structure
 
 * `doc` *documentation*
 * `hm` *[MODULE] wrapper classes for the homematic xml output*
@@ -25,6 +25,10 @@ Make sure you had installed the [XML-API](https://github.com/jens-maus/XML-API) 
 ## changelog
 
 no version released
+
+## license
+
+MIT License
 
 ## authors
 
