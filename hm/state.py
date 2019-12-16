@@ -4,6 +4,9 @@ class State:
         self.ise_id = ise_id
         self.datapoints = datapoints
 
+    def __str__(self):
+        return self.tostring()
+
     def get_name(self):
         return self.name
 
@@ -25,4 +28,7 @@ class State:
             return False
 
     def tostring(self):
-        return "state: {0:40} | ise_id: {1:4} | datapoints: {2:14}".format(self.name, self.ise_id, str(len(self.datapoints)))
+        return "state: {0:40} | ise_id: {1:4} | datapoints: {2:14}".format(self.name, self.ise_id,
+                                                                           str(len(self.datapoints)))
+
+

@@ -1,0 +1,14 @@
+{
+  "base": {
+    "source": "file"
+  },
+  "source": {
+    "file": {
+      "folder": "testdata"
+    },
+    "ccu": {
+      "address": "ccu3-webui",
+      "secure": false
+    }
+  }
+}

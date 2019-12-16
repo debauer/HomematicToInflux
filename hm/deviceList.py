@@ -25,7 +25,7 @@ class DeviceList(BaseList):
 
     def print_all_devices(self):
         for r in self.devices:
-            print(r.tostring())
+            print(r)
 
     def get_device_count(self):
         return len(self.devices)

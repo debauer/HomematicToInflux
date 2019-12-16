@@ -21,7 +21,7 @@ class RoomList(BaseList):
 
     def print_all_rooms(self):
         for r in self.rooms:
-            print(r.tostring())
+            print(r)
 
     def get_room_count(self):
         return len(self.rooms)

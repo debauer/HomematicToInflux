@@ -33,4 +33,4 @@ class StateList(BaseList):
 
     def print_all_states(self):
         for r in self.state:
-            print(r.tostring())
+            print(r)
