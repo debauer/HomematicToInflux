@@ -1,23 +1,31 @@
-from hm import BaseList
+from hm import BaseList, Device
+import xml.etree.ElementTree as ET
 
 
-class Devicelist(BaseList):
+class DeviceList(BaseList):
     def __init__(self, xml):
         BaseList.__init__(self, xml)
         self.devices = []
 
         xmlp = ET.XMLParser(encoding=self.encoding)
-        devicelist = ET.fromstring(xml, xmlp)
+        roomlist = ET.fromstring(xml, xmlp)
 
-        for r in devicelist:
-            device_name = r.attrib['name']
-            ise_id = 1
-            channels = []
-            for c in r:
-                channels.append(c.attrib['ise_id'])
-            new_room = Device(device_name, ise_id, channels)
+        for r in roomlist:
+            room_name = r.attrib['name']
+            device_type = r.attrib['device_type']
+            address = r.attrib['address']
+            ise_id = r.attrib['ise_id']
+            new_room = Device(room_name, ise_id, address, device_type)
             self.devices.append(new_room)
 
-    def print_all_rooms(self):
+    def get_device_by_name(self, name):
+        for r in self.devices:
+            if r.name == name:
+                return r
+
+    def print_all_devices(self):
         for r in self.devices:
             print(r.tostring())
+
+    def get_device_count(self):
+        return len(self.devices)
