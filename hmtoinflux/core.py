@@ -1,3 +1,7 @@
+from datetime import datetime
+import time
+from random import random
+
 import requests
 from python_json_config import ConfigBuilder
 
@@ -29,26 +33,23 @@ def Core():
         roomList = RoomList(xml.read())
         xml.close()
 
-        def printStateList():
-            stateList.print_all_states()
+        from influxdb import InfluxDBClient
+        client = InfluxDBClient('localhost', 8086, 'root', 'root', 'homematicToInflux')
 
-        def printRoomList():
-            roomList.print_all_rooms()
+        while 1:
+            json_body = [
+                {
+                    "measurement": "cpu_load_short",
+                    "tags": {
+                        "host": "server01",
+                        "region": "us-west"
+                    },
+                    "fields": {
+                        "value": random()
+                    }
+                }
+            ]
+            print(json_body)
 
-        def printDatapoints():
-            d = stateList.get_state_by_name('EG_Wohnz_Temp_Feuchte')
-            if d:
-                datapoints = d.get_datapoints()
-                for datapoint in datapoints:
-                    print(datapoint)
-
-        def printDeviceList():
-            deviceList.print_all_devices()
-
-        def printDeviceList():
-            deviceList.print_all_devices()
-
-        printRoomList()
-        printDeviceList()
-        printStateList()
-        # printDatapoints()
+            client.write_points(json_body)
+            time.sleep(1);

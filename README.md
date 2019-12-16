@@ -1,5 +1,9 @@
 # HomematicToInflux
 
+This project is a bridge between the [homematic XML-API Plugin](https://github.com/jens-maus/XML-API) and an InfluxDB. Mainly to visualize the sensor and actor states in Grafana.  
+
+Feel free to contribute
+
 ## project structure
 
 * `doc` *documentation*
@@ -19,6 +23,8 @@ Make sure you had installed the [XML-API](https://github.com/jens-maus/XML-API) 
 `make test`
 
 ## run homematicToInflux
+
+`make run-docker`
 
 `make run`
 
