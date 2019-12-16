@@ -11,6 +11,7 @@ stateList = {}
 deviceList = {}
 roomList = {}
 
+
 def Core():
     print('HMTOINFLUX: started with source: ' + config.base.source)
     if config.base.source == 'ccu':
