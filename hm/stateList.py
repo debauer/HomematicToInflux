@@ -31,6 +31,6 @@ class StateList(BaseList):
             if s.name == name:
                 return s
 
-    def print_all_rooms(self):
+    def print_all_states(self):
         for r in self.state:
             print(r.tostring())

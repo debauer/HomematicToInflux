@@ -2,7 +2,7 @@ from hm import BaseList, Room
 import xml.etree.ElementTree as ET
 
 
-class Roomlist(BaseList):
+class RoomList(BaseList):
     def __init__(self, xml):
         BaseList.__init__(self, xml)
         self.rooms = []
