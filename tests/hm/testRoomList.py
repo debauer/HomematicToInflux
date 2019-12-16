@@ -3,7 +3,7 @@ from hm import Roomlist
 
 
 class HmRoomListTest(unittest.TestCase):
-    def testImport(self):
+    def testRoomList(self):
         xml = open("testdata/roomlist.xml", "r", encoding="ISO-8859-1")
         xml_string = xml.read()
         rl = Roomlist(xml_string)
