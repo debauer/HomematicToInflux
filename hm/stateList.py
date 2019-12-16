@@ -23,7 +23,7 @@ class StateList(BaseList):
                         obj[a] = datapoint.attrib[a]
                     obj['name'] = re.sub('.*\.', '', obj['name'])  # replace bullshit
                     datapoints.append(obj)
-            new_state = DeviceState(device_name, ise_id, datapoints)
+            new_state = State(device_name, ise_id, datapoints)
             self.state.append(new_state)
 
     def get_state_by_name(self, name):

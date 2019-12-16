@@ -1,10 +1,8 @@
-
-
 class State:
-    def __init__(self, name, ise_id, channels):
+    def __init__(self, name, ise_id, datapoints):
         self.name = name
         self.ise_id = ise_id
-        self.channels = channels
+        self.datapoints = datapoints
 
     def get_name(self):
         return self.name
@@ -12,19 +10,19 @@ class State:
     def get_ise_id(self):
         return self.ise_id
 
-    def get_channels(self):
-        return self.channels
+    def get_datapoints(self):
+        return self.datapoints
 
-    def get_channel_by_name(self,name):
-        for channel in self.channels:
-            if channel['name'] == name:
-                return channel
+    def get_datapoint_by_name(self, name):
+        for datapoint in self.datapoints:
+            if datapoint['name'] == name:
+                return datapoint
 
-    def is_id_in_channels(self, ise_id):
-        if ise_id in self.channels:
+    def is_id_in_datapoints(self, ise_id):
+        if ise_id in self.datapoints:
             return True
         else:
             return False
 
     def tostring(self):
-        return "state: {0:40} | ise_id: {1:4} | channels: {2:14}".format(self.name, self.ise_id, str(len(self.channels)))
+        return "state: {0:40} | ise_id: {1:4} | datapoints: {2:14}".format(self.name, self.ise_id, str(len(self.datapoints)))
