@@ -5,3 +5,5 @@ from .baseList import BaseList
 from .roomList import RoomList
 from .stateList import StateList
 from .deviceList import DeviceList
+from .valueType import ValueSubType, ValueType
+from .deviceType import DeviceType

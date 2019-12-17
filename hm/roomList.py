@@ -6,7 +6,10 @@ class RoomList(BaseList):
     def __init__(self, xml):
         BaseList.__init__(self, xml)
         self.rooms = []
+        self.rebuild(xml)
 
+    def rebuild(self, xml):
+        self.rooms = []
         xmlp = ET.XMLParser(encoding=self.encoding)
         roomlist = ET.fromstring(xml, xmlp)
 

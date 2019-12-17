@@ -1,3 +1,6 @@
+from .valueType import ValueType, ValueSubType
+
+
 class State:
     def __init__(self, name, ise_id, datapoints):
         self.name = name
@@ -30,5 +33,3 @@ class State:
     def tostring(self):
         return "state: {0:40} | ise_id: {1:4} | datapoints: {2:14}".format(self.name, self.ise_id,
                                                                            str(len(self.datapoints)))
-
-

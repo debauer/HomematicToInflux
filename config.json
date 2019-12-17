@@ -10,5 +10,8 @@
       "address": "ccu3-webui",
       "secure": false
     }
+  },
+  "influx":{
+    "bulk_size": 5
   }
 }

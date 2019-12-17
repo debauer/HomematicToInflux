@@ -1,15 +1,10 @@
-from datetime import datetime
 import time
-from random import random
-
 import requests
-from python_json_config import ConfigBuilder
 
 from hm import StateList, DeviceList, RoomList
+from . import config
 
-builder = ConfigBuilder()
-
-config = builder.parse_config('config.json')
+from hmtoinflux.influxDataBuilder import InfluxDataBuilder
 
 stateList = {}
 deviceList = {}
@@ -21,7 +16,7 @@ def Core():
     if config.base.source == 'ccu':
         xml = requests.get('http://ccu3-webui/config/xmlapi/devicelist.cgi')
     else:
-        xml = open('testdata/statelist.xml', "r", encoding="ISO-8859-1")
+        xml = open('testdata/statelist_old.xml', "r", encoding="ISO-8859-1")
         stateList = StateList(xml.read())
         xml.close()
 
@@ -33,23 +28,7 @@ def Core():
         roomList = RoomList(xml.read())
         xml.close()
 
-        from influxdb import InfluxDBClient
-        client = InfluxDBClient('localhost', 8086, 'root', 'root', 'homematicToInflux')
-
+        builder = InfluxDataBuilder(stateList, deviceList, roomList)
         while 1:
-            json_body = [
-                {
-                    "measurement": "cpu_load_short",
-                    "tags": {
-                        "host": "server01",
-                        "region": "us-west"
-                    },
-                    "fields": {
-                        "value": random()
-                    }
-                }
-            ]
-            print(json_body)
-
-            client.write_points(json_body)
-            time.sleep(1);
+            builder.write_state_data()
+            time.sleep(1)

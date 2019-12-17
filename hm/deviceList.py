@@ -6,7 +6,10 @@ class DeviceList(BaseList):
     def __init__(self, xml):
         BaseList.__init__(self, xml)
         self.devices = []
+        self.rebuild(xml)
 
+    def rebuild(self, xml):
+        self.devices = []
         xmlp = ET.XMLParser(encoding=self.encoding)
         roomlist = ET.fromstring(xml, xmlp)
 
