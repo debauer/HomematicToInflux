@@ -19,3 +19,7 @@ stop-docker:
 	sudo docker-compose stop
 cleanup-docker:
 	sudo docker-compose rm
+
+cleanup-influx:
+	curl -i -XPOST http://localhost:8086/query --data-urlencode "q=DROP database homematicToInflux"
+	curl -i -XPOST http://localhost:8086/query --data-urlencode "q=CREATE database homematicToInflux"
