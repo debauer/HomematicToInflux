@@ -25,7 +25,7 @@
             <datapoint name='HmIP-RF.000E5A498E1549:1.ACTIVE_PROFILE' type='ACTIVE_PROFILE' ise_id='1415' value='1'
                        valuetype='16' valueunit='' timestamp='1576575301' operations='7'/>
             <datapoint name='HmIP-RF.000E5A498E1549:1.ACTUAL_TEMPERATURE' type='ACTUAL_TEMPERATURE' ise_id='1416'
-                       value='13.600000' valuetype='4' valueunit='' timestamp='1576575301' operations='5'/>
+                       value='18.600000' valuetype='4' valueunit='' timestamp='1576575301' operations='5'/>
             <datapoint name='HmIP-RF.000E5A498E1549:1.ACTUAL_TEMPERATURE_STATUS' type='ACTUAL_TEMPERATURE_STATUS'
                        ise_id='1417' value='0' valuetype='16' valueunit='' timestamp='1576575301' operations='5'/>
             <datapoint name='HmIP-RF.000E5A498E1549:1.BOOST_MODE' type='BOOST_MODE' ise_id='1418' value='false'

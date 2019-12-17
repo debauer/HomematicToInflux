@@ -10,13 +10,42 @@ stateList = {}
 deviceList = {}
 roomList = {}
 
+apiurl = 'http://'+config.source.ccu.address+'/addons/xmlapi/'
+
+def updateDevices():
+    xml = requests.get(apiurl + 'devicelist.cgi')
+    deviceList.rebuild(xml.text)
+
+def updateRoom():
+    xml = requests.get(apiurl + 'roomlist.cgi')
+    roomList.rebuild(xml.text)
+
+def updateState():
+    xml = requests.get(apiurl + 'statelist.cgi')
+    stateList.rebuild(xml.text)
 
 def Core():
+    global deviceList, stateList, roomList
     print('HMTOINFLUX: started with source: ' + config.base.source)
     if config.base.source == 'ccu':
-        xml = requests.get('http://ccu3-webui/config/xmlapi/devicelist.cgi')
+        count = 0
+
+        xml = requests.get(apiurl + 'devicelist.cgi')
+        deviceList = DeviceList(xml.text)
+        xml = requests.get(apiurl + 'statelist.cgi')
+        stateList = StateList(xml.text)
+        xml = requests.get(apiurl + 'roomlist.cgi')
+        roomList = RoomList(xml.text)
+        while 1:
+            if count > 6:
+                updateDevices()
+                updateRoom()
+            updateState()
+            builder = InfluxDataBuilder(stateList, deviceList, roomList)
+            builder.write_state_data()
+            time.sleep(10)
     else:
-        xml = open('testdata/statelist_old.xml', "r", encoding="ISO-8859-1")
+        xml = open('testdata/statelist.xml', "r", encoding="ISO-8859-1")
         stateList = StateList(xml.read())
         xml.close()
 

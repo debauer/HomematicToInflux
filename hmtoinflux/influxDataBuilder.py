@@ -6,8 +6,6 @@ from .stateSeriesHelper import STHStateSeriesHelper
 def format_wrapper(obj, name):
     type = int(obj.get_datapoint_by_name(name)['valuetype'])
     value = obj.get_datapoint_by_name(name)['value']
-    if name == 'ACTUAL_TEMPERATURE' and obj.get_name() == 'EG_Flur_Temp_Feuchte':
-        print(obj.get_datapoint_by_name(name))
     if type == ValueType.ivtInteger.value:
         if value == '':
             return 0
@@ -28,7 +26,7 @@ class InfluxDataBuilder:
 
     def write_state_data(self):
         for state in self.stateList.states:
-            if self.deviceList.get_device_by_name(state.get_name()):
+            if self.deviceList.get_device_by_name(state.get_name()) is not None:
                 if self.deviceList.get_device_by_name(state.get_name()).get_device_type() == DeviceType.STH.value:
                     STHStateSeriesHelper(
                         DEVICE_NAME=state.get_name(),
@@ -64,5 +62,3 @@ class InfluxDataBuilder:
                         SWITCH_POINT_OCCURED=format_wrapper(state, 'SWITCH_POINT_OCCURED'),
                         WINDOW_STATE=format_wrapper(state, 'WINDOW_STATE')
                     )
-                    if (state.get_name() == 'EG_Flur_Temp_Feuchte'):
-                        print(STHStateSeriesHelper._json_body_())
