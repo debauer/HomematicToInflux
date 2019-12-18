@@ -14,7 +14,7 @@ def format_wrapper(obj, name):
         return 0
     type = int(obj.get_datapoint_by_name(name)['valuetype'])
     value = obj.get_datapoint_by_name(name)['value']
-    if type == ValueType.ivtInteger.value:
+    if type == ValueType.ivtInteger.value or type == ValueType.ivtRSSI.value:
         if value == '':
             return 0
         return int(value)

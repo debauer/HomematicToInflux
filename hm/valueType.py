@@ -7,6 +7,7 @@ class ValueType(Enum):
     ivtFloat = 4
     ivtInteger = 16
     ivtString = 20
+    ivtRSSI = 8
 
 @unique
 class ValueSubType(Enum):
