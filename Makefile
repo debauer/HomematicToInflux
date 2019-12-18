@@ -1,11 +1,11 @@
 init:
-	pip install -r requirements.txt
+	pip3 install -r requirements.txt
 run:
-	python -m hmtoinflux
+	python3 -m hmtoinflux
 test:
-	python -m unittest discover -v
+	python3 -m unittest discover -v
 build:
-	python setup.py sdist
+	python3 setup.py sdist
 
 init-docker:
 	sudo mkdir -p /srv/docker/grafana/data
