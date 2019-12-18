@@ -35,6 +35,10 @@ def buildArguments(helper, state):
     return args
 
 
+def buildCall(func, state):
+    func(**buildArguments(func, state))
+
+
 class InfluxDataBuilder:
     def __init__(self, stateList, deviceList, roomList):
         self.stateList = stateList
@@ -52,4 +56,4 @@ class InfluxDataBuilder:
             if self.deviceList.get_device_by_name(state.get_name()) is not None:
                 deviceType = self.deviceList.get_device_by_name(state.get_name()).get_device_type()
                 if deviceType in func:
-                    func[deviceType](**buildArguments(func[deviceType], state))
+                    buildCall(func[deviceType], state)

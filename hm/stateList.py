@@ -24,7 +24,10 @@ class StateList(BaseList):
                     obj = {}
                     for a in datapoint.attrib:
                         obj[a] = datapoint.attrib[a]
-                    obj['name'] = re.sub('.*\.', '', obj['name'])  # replace bullshit
+                    name = re.sub('.*:', '', obj['name'])  # replace bullshit
+                    nr = re.sub('\..*', '', name)
+                    name = name.replace(nr+'.', '') + '_' + nr
+                    obj['name'] = name
                     datapoints.append(obj)
             new_state = State(device_name, ise_id, datapoints)
             self.states.append(new_state)
