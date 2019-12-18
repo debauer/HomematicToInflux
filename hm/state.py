@@ -21,7 +21,7 @@ class State:
 
     def get_datapoint_by_name(self, name):
         for datapoint in self.datapoints:
-            if datapoint['name'] == name:
+            if 'name' in datapoint and datapoint['name'] == name:
                 return datapoint
 
     def is_id_in_datapoints(self, ise_id):
