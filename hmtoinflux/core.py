@@ -3,6 +3,7 @@ import requests
 
 from hm import StateList, DeviceList, RoomList
 from . import config
+from xml.etree.ElementTree import ParseError
 
 from hmtoinflux.influxDataBuilder import InfluxDataBuilder
 
@@ -37,12 +38,15 @@ def Core():
         xml = requests.get(apiurl + 'roomlist.cgi')
         roomList = RoomList(xml.text)
         while 1:
-            if count > 6:
-                updateDevices()
-                updateRoom()
-            updateState()
-            builder = InfluxDataBuilder(stateList, deviceList, roomList)
-            builder.write_state_data()
+            try:
+                if count > 6:
+                    updateDevices()
+                    updateRoom()
+                updateState()
+                builder = InfluxDataBuilder(stateList, deviceList, roomList)
+                builder.write_state_data()
+            except (ParseError, ConnectionError):
+                pass
             time.sleep(10)
     else:
         xml = open('testdata/statelist.xml', "r", encoding="ISO-8859-1")
