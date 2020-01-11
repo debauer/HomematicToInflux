@@ -1,14 +1,21 @@
 [Unit]
-
 Description=HomematicToInflux
-[Service]
+After=syslog.target
 
-ExecStart=/usr/bin/python3 /home/hmtoinflux//HomematicToInflux
+[Service]
+Type=simple
+WorkingDirectory=/home/hmtoinflux/HomematicToInflux
+ExecStart=/home/hmtoinflux/HomematicToInflux/main.py
 Environment=PYTHONUNBUFFERED=1
-Restart=on-failure
 Type=notify
 User=hmtoinflux
+Group=hmtoinflux
 
+SyslogIdentifier=hmtoinflux
+StandardOutput=syslog
+StandardError=syslog
+Restart=always
+RestartSec=5
 
 [Install]
-WantedBy=default.target
+WantedBy=multi-user.target
