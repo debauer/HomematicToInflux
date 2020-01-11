@@ -1,0 +1,14 @@
+[Unit]
+
+Description=HomematicToInflux
+[Service]
+
+ExecStart=/usr/bin/python3 /home/hmtoinflux//HomematicToInflux
+Environment=PYTHONUNBUFFERED=1
+Restart=on-failure
+Type=notify
+User=hmtoinflux
+
+
+[Install]
+WantedBy=default.target
