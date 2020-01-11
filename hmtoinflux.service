@@ -5,9 +5,8 @@ After=syslog.target
 [Service]
 Type=simple
 WorkingDirectory=/home/hmtoinflux/HomematicToInflux
-ExecStart=/home/hmtoinflux/HomematicToInflux/main.py
+ExecStart=/usr/bin/python3 -m hmtoinflux
 Environment=PYTHONUNBUFFERED=1
-Type=notify
 User=hmtoinflux
 Group=hmtoinflux
 
