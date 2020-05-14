@@ -7,7 +7,7 @@
       "folder": "testdata"
     },
     "ccu": {
-      "address": "192.168.1.6",
+      "address": "192.168.1.105",
       "secure": false
     }
   },
