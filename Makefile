@@ -14,6 +14,7 @@ init-docker:
 	sudo docker pull grafana/grafana
 	sudo docker pull influxdb
 run-docker:
+	sudo systemctl start docker.service
 	sudo docker-compose up -d
 stop-docker:
 	sudo docker-compose stop
