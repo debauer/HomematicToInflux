@@ -10,3 +10,4 @@ class DeviceType(Enum):
     SWDO = 'HMIP-SWDO'
     PSM = 'HMIP-PSM'
     RCV50 = 'HmIP-RCV-50'
+    ESTXWM = 'HM-ES-TX-WM'
