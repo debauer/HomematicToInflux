@@ -361,7 +361,7 @@ class ESTXWMStateSeriesHelper(SeriesHelper):
 
         # The series name must be a string. Add dependent fields/tags
         # in curly brackets.
-        series_name = 'ESTXWM'
+        series_name = 'stateESTXWM'
 
         device_type = DeviceType.ESTXWM.value
 
