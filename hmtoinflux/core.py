@@ -33,8 +33,8 @@ def Core():
     global deviceList, stateList, roomList
     print('HMTOINFLUX: started with source: ' + config.base.source)
     if config.base.source == 'ccu':
+        print('HMTOINFLUX: okey get the data from the CCU')
         count = 0
-
         xml = requests.get(apiurl + 'devicelist.cgi')
         deviceList = DeviceList(xml.text)
         xml = requests.get(apiurl + 'statelist.cgi')
@@ -57,6 +57,7 @@ def Core():
             print("update done")
             time.sleep(10)
     else:
+        print('HMTOINFLUX: we use demo data ')
         xml = open('testdata/statelist.xml', "r", encoding="ISO-8859-1")
         stateList = StateList(xml.read())
         xml.close()
