@@ -13,6 +13,8 @@ roomList = {}
 
 apiurl = 'http://'+config.source.ccu.address+'/addons/xmlapi/'
 
+print("homematic api url: " + apiurl)
+
 def updateDevices():
     xml = requests.get(apiurl + 'devicelist.cgi')
     deviceList.rebuild(xml.text)
@@ -22,8 +24,10 @@ def updateRoom():
     roomList.rebuild(xml.text)
 
 def updateState():
+    print("updateState: started")
     xml = requests.get(apiurl + 'statelist.cgi')
     stateList.rebuild(xml.text)
+    print("updateState: ready")
 
 def Core():
     global deviceList, stateList, roomList
@@ -38,6 +42,7 @@ def Core():
         xml = requests.get(apiurl + 'roomlist.cgi')
         roomList = RoomList(xml.text)
         while 1:
+            print("update runs...")
             try:
                 if count > 6:
                     updateDevices()
@@ -46,7 +51,10 @@ def Core():
                 builder = InfluxDataBuilder(stateList, deviceList, roomList)
                 builder.write_state_data()
             except (ParseError, ConnectionError):
+                print(ParseError)
+                print(ConnectionError)
                 pass
+            print("update done")
             time.sleep(10)
     else:
         xml = open('testdata/statelist.xml', "r", encoding="ISO-8859-1")
