@@ -5,7 +5,7 @@ After=syslog.target
 [Service]
 Type=simple
 WorkingDirectory=/home/hmtoinflux/hmtoinflux
-ExecStart=/usr/bin/python3 -m hmtoinflux
+ExecStart=/home/hmtoinflux/venv/bin/python3 -m hmtoinflux
 Environment=PYTHONUNBUFFERED=1
 User=hmtoinflux
 Group=hmtoinflux
