@@ -1,12 +1,15 @@
-from hm import BaseList, Room
+
 import xml.etree.ElementTree as ET
+
+from .baseList import BaseList
+from HomematicToInflux.data_types import Room
 
 
 class RoomList(BaseList):
-    def __init__(self, xml):
-        BaseList.__init__(self, xml)
+    def __init__(self, address: str, mode: str):
+        BaseList.__init__(self, address, mode)
         self.rooms = []
-        self.rebuild(xml)
+        self.update()
 
     def rebuild(self, xml):
         self.rooms = []

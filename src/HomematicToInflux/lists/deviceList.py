@@ -1,12 +1,14 @@
-from hm import BaseList, Device
 import xml.etree.ElementTree as ET
+
+from HomematicToInflux.data_types import Device
+from HomematicToInflux.lists import BaseList
 
 
 class DeviceList(BaseList):
-    def __init__(self, xml):
-        BaseList.__init__(self, xml)
+    def __init__(self, address: str, mode: str):
+        BaseList.__init__(self, address, mode)
         self.devices = []
-        self.rebuild(xml)
+        self.update()
 
     def rebuild(self, xml):
         self.devices = []

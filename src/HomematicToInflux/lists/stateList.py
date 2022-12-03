@@ -1,19 +1,21 @@
 import xml.etree.ElementTree as ET
 import re
 
-from hm import BaseList, State
+from .baseList import BaseList
+from HomematicToInflux.data_types import State
 
 
 class StateList(BaseList):
-    def __init__(self, xml):
-        BaseList.__init__(self, xml)
+    def __init__(self, address: str, mode: str):
+        BaseList.__init__(self, address, mode)
         self.states = []
-        self.rebuild(xml)
+        self.update()
 
     def rebuild(self, xml):
         self.states = []
         xmlp = ET.XMLParser(encoding=self.encoding)
         statelist = ET.fromstring(xml, xmlp)
+
 
         for device in statelist:
             device_name = device.attrib['name']

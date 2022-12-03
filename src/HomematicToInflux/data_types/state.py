@@ -1,5 +1,3 @@
-from .valueType import ValueType, ValueSubType
-
 
 class State:
     def __init__(self, name, ise_id, datapoints):
