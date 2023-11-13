@@ -1,3 +1,3 @@
-from hmtoinflux.core import Core
+from hmtoinflux.core import core
 
-Core()
+core()

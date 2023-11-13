@@ -15,7 +15,7 @@ def parse_args() -> Namespace:
     return parser.parse_args()
 
 
-def Core() -> None:
+def core() -> None:
     args = parse_args()
     source = args.source
     ccu_address = args.address
@@ -35,4 +35,4 @@ def Core() -> None:
 
 
 if __name__ == "__main__":
-    Core()
+    core()
