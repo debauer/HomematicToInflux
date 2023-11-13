@@ -1,7 +1,7 @@
 import time
 from argparse import ArgumentParser, Namespace
 
-from HomematicToInflux.influxDataBuilder import InfluxDataBuilder
+from .influxDataBuilder import InfluxDataBuilder
 from lists import DeviceList, RoomList, StateList
 
 

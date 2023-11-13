@@ -1,6 +1,5 @@
 from influxdb import SeriesHelper
-
-from HomematicToInflux.types import DeviceType
+from HomematicToInflux.data_types import DeviceType
 
 # Schalt-Mess-Steckdose
 class PSMStateSeriesHelper(SeriesHelper):

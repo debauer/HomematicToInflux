@@ -3,7 +3,7 @@ name = "hmToInflux"
 version = "0.0.1"
 description = ""
 authors = [
-    "David Bauer <bauer@synyx.de>",
+    "David Bauer <github@debauer.net>",
 ]
 license = "MIT"
 readme = "README.md"
@@ -18,6 +18,7 @@ tams = "HomematicToInflux.core:core"
 [tool.poetry.dependencies]
 python = "^3.10"
 influxdb = "^5.3.1"
+overrides = "^7.3.1"
 
 [tool.poetry.dev-dependencies]
 types-requests = "^2.27.30"

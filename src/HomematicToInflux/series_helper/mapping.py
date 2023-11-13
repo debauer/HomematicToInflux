@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+
 from typing import Type, TypeVar
 
 from influxdb import SeriesHelper

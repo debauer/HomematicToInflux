@@ -1,14 +1,11 @@
 from influxdb import SeriesHelper
+from HomematicToInflux.data_types import DeviceType
 
-from HomematicToInflux.types import DeviceType
+
 class SWDOStateSeriesHelper(SeriesHelper):
     class Meta:
         client = None
-
-        # The series name must be a string. Add dependent fields/tags
-        # in curly brackets.
         series_name = 'stateSWDO'
-
         device_type = DeviceType.SWDO.value
 
         fields = [
@@ -30,6 +27,3 @@ class SWDOStateSeriesHelper(SeriesHelper):
 
         bulk_size = 5
         autocommit = True
-
-
-

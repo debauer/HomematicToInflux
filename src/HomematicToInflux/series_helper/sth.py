@@ -1,6 +1,6 @@
 from influxdb import SeriesHelper
 
-from HomematicToInflux.types import DeviceType
+from HomematicToInflux.data_types import DeviceType
 
 
 class STHStateSeriesHelper(SeriesHelper):

@@ -7,7 +7,7 @@ from HomematicToInflux.lists import BaseList
 class DeviceList(BaseList):
     def __init__(self, address: str, mode: str):
         BaseList.__init__(self, address, mode)
-        self.devices = []
+        self.devices: list[Device] = []
         self.update()
 
     def rebuild(self, xml):

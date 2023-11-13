@@ -41,6 +41,14 @@ def buildCall(func, state):
     func(**buildArguments(func, state))
 
 
+#def commit():
+#    self.influx = InfluxDBClient(
+#                url=self.config.influx_url,
+#                token=self.config.influx_token,
+#                org=self.config.influx_org,
+#            )
+#            self.influx_write_api = self.influx.write_api()
+
 class InfluxDataBuilder:
     def __init__(self, states: StateList, devices: DeviceList, rooms: RoomList):
         self.states = states
