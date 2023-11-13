@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as ET
 
-from HomematicToInflux.data_types import Device
-from HomematicToInflux.lists import BaseList
+from hmtoinflux.data_types import Device
+from hmtoinflux.lists import BaseList
 
 
 class DeviceList(BaseList):
@@ -16,10 +16,10 @@ class DeviceList(BaseList):
         roomlist = ET.fromstring(xml, xmlp)
 
         for r in roomlist:
-            room_name = r.attrib['name']
-            device_type = r.attrib['device_type']
-            address = r.attrib['address']
-            ise_id = r.attrib['ise_id']
+            room_name = r.attrib["name"]
+            device_type = r.attrib["device_type"]
+            address = r.attrib["address"]
+            ise_id = r.attrib["ise_id"]
             new_room = Device(room_name, ise_id, address, device_type)
             self.devices.append(new_room)
 

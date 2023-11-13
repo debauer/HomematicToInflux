@@ -6,6 +6,7 @@ from typing import Any, TypedDict
 
 from overrides import EnforceOverrides
 
+
 class Measurement(TypedDict):
     measurement: str
     tags: dict[str, str | int]

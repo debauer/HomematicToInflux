@@ -2,7 +2,7 @@ import xml.etree.ElementTree as ET
 import re
 
 from .baseList import BaseList
-from HomematicToInflux.data_types import State
+from hmtoinflux.data_types import State
 
 
 class StateList(BaseList):
@@ -17,18 +17,18 @@ class StateList(BaseList):
         statelist = ET.fromstring(xml, xmlp)
 
         for device in statelist:
-            device_name = device.attrib['name']
-            ise_id = device.attrib['ise_id']
+            device_name = device.attrib["name"]
+            ise_id = device.attrib["ise_id"]
             datapoints = []
             for channel in device:
                 for datapoint in channel:
                     obj = {}
                     for a in datapoint.attrib:
                         obj[a] = datapoint.attrib[a]
-                    name = re.sub('.*:', '', obj['name'])  # replace bullshit
-                    nr = re.sub('\..*', '', name)
-                    name = name.replace(nr + '.', '') + '_' + nr
-                    obj['name'] = name
+                    name = re.sub(".*:", "", obj["name"])  # replace bullshit
+                    nr = re.sub("\..*", "", name)
+                    name = name.replace(nr + ".", "") + "_" + nr
+                    obj["name"] = name
                     datapoints.append(obj)
             new_state = State(device_name, ise_id, datapoints)
             self.states.append(new_state)

@@ -20,7 +20,9 @@ class Room:
             return False
 
     def tostring(self):
-        return "room: {0:40} | ise_id: {1:4} | channels: {2:14}".format(self.name, self.ise_id, str(len(self.channels)))
+        return "room: {0:40} | ise_id: {1:4} | channels: {2:14}".format(
+            self.name, self.ise_id, str(len(self.channels))
+        )
 
     def __str__(self):
         return self.tostring()
