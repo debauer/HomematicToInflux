@@ -30,7 +30,7 @@ class StateList(BaseList):
                     name = name.replace(nr + ".", "") + "_" + nr
                     obj["name"] = name
                     datapoints.append(obj)
-            new_state = State(device_name, ise_id, datapoints)
+            new_state = State(device_name, int(ise_id), datapoints)
             self.states.append(new_state)
 
     def get_state_by_name(self, name: str) -> State:

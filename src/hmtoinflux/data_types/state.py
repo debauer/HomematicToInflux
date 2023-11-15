@@ -1,5 +1,5 @@
 class State:
-    def __init__(self, name, ise_id, datapoints):
+    def __init__(self, name: str, ise_id: int, datapoints: list[dict[str, any]]):
         self.name = name
         self.ise_id = ise_id
         self.datapoints = datapoints
