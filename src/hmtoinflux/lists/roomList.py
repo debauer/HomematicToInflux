@@ -1,12 +1,14 @@
-from hm import BaseList, Room
 import xml.etree.ElementTree as ET
+
+from .baseList import BaseList
+from hmtoinflux.data_types import Room
 
 
 class RoomList(BaseList):
-    def __init__(self, xml):
-        BaseList.__init__(self, xml)
+    def __init__(self, address: str, mode: str):
+        BaseList.__init__(self, address, mode)
         self.rooms = []
-        self.rebuild(xml)
+        self.update()
 
     def rebuild(self, xml):
         self.rooms = []
@@ -14,11 +16,11 @@ class RoomList(BaseList):
         roomlist = ET.fromstring(xml, xmlp)
 
         for r in roomlist:
-            room_name = r.attrib['name']
-            ise_id = r.attrib['ise_id']
+            room_name = r.attrib["name"]
+            ise_id = r.attrib["ise_id"]
             channels = []
             for c in r:
-                channels.append(c.attrib['ise_id'])
+                channels.append(c.attrib["ise_id"])
             new_room = Room(room_name, ise_id, channels)
             self.rooms.append(new_room)
 

@@ -1,8 +1,5 @@
-from .valueType import ValueType, ValueSubType
-
-
 class State:
-    def __init__(self, name, ise_id, datapoints):
+    def __init__(self, name: str, ise_id: int, datapoints: list[dict[str, any]]):
         self.name = name
         self.ise_id = ise_id
         self.datapoints = datapoints
@@ -21,7 +18,7 @@ class State:
 
     def get_datapoint_by_name(self, name):
         for datapoint in self.datapoints:
-            if 'name' in datapoint and datapoint['name'] == name:
+            if "name" in datapoint and datapoint["name"] == name:
                 return datapoint
 
     def is_id_in_datapoints(self, ise_id):
@@ -31,5 +28,6 @@ class State:
             return False
 
     def tostring(self):
-        return "state: {0:40} | ise_id: {1:4} | datapoints: {2:14}".format(self.name, self.ise_id,
-                                                                           str(len(self.datapoints)))
+        return "state: {0:40} | ise_id: {1:4} | datapoints: {2:14}".format(
+            self.name, self.ise_id, str(len(self.datapoints))
+        )

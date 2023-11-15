@@ -24,7 +24,9 @@ class Device:
             return False
 
     def tostring(self):
-        return "device: {0:40} | ise_id: {1:4} | address: {2:14} | device_type: {3:10}".format(self.name, self.ise_id, self.address, self.device_type)
+        return "device: {0:40} | ise_id: {1:4} | address: {2:14} | device_type: {3:10}".format(
+            self.name, self.ise_id, self.address, self.device_type
+        )
 
     def __str__(self):
         return self.tostring()
