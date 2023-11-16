@@ -1,9 +1,12 @@
+from __future__ import annotations
+
 from dataclasses import dataclass
 
 
 @dataclass
 class HomematicCCU:
     address: str
+
 
 @dataclass
 class InfluxDB:

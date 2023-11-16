@@ -1,20 +1,28 @@
-import xml.etree.ElementTree as ET
+from __future__ import annotations
+
 import re
 
-from .baseList import BaseList
+from logging import getLogger
+
+from defusedxml import ElementTree
+
 from hmtoinflux.data_types import State
+from hmtoinflux.lists.base_list import BaseList
+
+
+_log = getLogger()
 
 
 class StateList(BaseList):
-    def __init__(self, address: str, mode: str):
+    def __init__(self, address: str, mode: str) -> None:
         BaseList.__init__(self, address, mode)
         self.states: list[State] = []
         self.update()
 
-    def rebuild(self, xml) -> None:
+    def rebuild(self, xml: str) -> None:
         self.states = []
-        xmlp = ET.XMLParser(encoding=self.encoding)
-        statelist = ET.fromstring(xml, xmlp)
+        xmlp = ElementTree.XMLParser(encoding=self.encoding)
+        statelist = ElementTree.fromstring(xml, xmlp)
 
         for device in statelist:
             device_name = device.attrib["name"]
@@ -26,7 +34,7 @@ class StateList(BaseList):
                     for a in datapoint.attrib:
                         obj[a] = datapoint.attrib[a]
                     name = re.sub(".*:", "", obj["name"])  # replace bullshit
-                    nr = re.sub("\..*", "", name)
+                    nr = re.sub(r"\..*", "", name)
                     name = name.replace(nr + ".", "") + "_" + nr
                     obj["name"] = name
                     datapoints.append(obj)
@@ -37,7 +45,8 @@ class StateList(BaseList):
         for s in self.states:
             if s.name == name:
                 return s
+        return State(name="not found", datapoints=[], ise_id=0)
 
     def print_all_states(self) -> None:
         for r in self.states:
-            print(r)
+            _log.info(r)
