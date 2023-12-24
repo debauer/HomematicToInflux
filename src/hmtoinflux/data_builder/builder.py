@@ -29,4 +29,5 @@ class InfluxDataBuilder:
             if self.devices.get_device_by_name(state.get_name()) is not None:
                 device = self.devices.get_device_by_name(state.get_name())
                 points = InfluxPoint(state=state, config=self.config, device=device)
+                print(points.datapoints)
                 self.client.write_points(points.datapoints)

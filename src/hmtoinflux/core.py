@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import logging
 import time
 
 from argparse import ArgumentParser
@@ -29,24 +30,28 @@ def parse_args() -> Namespace:
         default="ccu",
     )
     parser.add_argument(
-        "-d",
         "--dryrun",
         action="store_const",
         const="dryrun",
         help="don't commit to influxdb",
     )
     parser.add_argument(
-        "-v",
-        "--verbose",
-        action="store_const",
-        const="verbose",
-        help="verbose",
+        '-d', '--debug',
+        help="Print lots of debugging statements",
+        action="store_const", dest="loglevel", const=logging.DEBUG,
+        default=logging.WARNING,
+    )
+    parser.add_argument(
+        '-v', '--verbose',
+        help="Be verbose",
+        action="store_const", dest="loglevel", const=logging.INFO,
     )
     return parser.parse_args()
 
 
 def core() -> None:
     args = parse_args()
+    logging.basicConfig(level=args.loglevel)
     source = args.source
     dryrun = args.dryrun
     config = ConfigWrapper()
@@ -56,7 +61,7 @@ def core() -> None:
     builder = InfluxDataBuilder(states, devices, rooms)
     _log.info("[HMTOINFLUX] started with source: " + source)
     _log.info(f"[args] {args}")
-    count = 0
+    count = 60
     while 1:
         if count > DEVICE_AND_ROOM_UPDATE_EVERY_SEC / STATE_UPDATE_EVERY_SEC:
             _log.debug("[update] devices and rooms")

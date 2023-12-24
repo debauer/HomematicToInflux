@@ -37,7 +37,7 @@ class InfluxPoint:
         fields = {
             p["name"]: self._parse_value(p["value"])
             for p in self.state.datapoints
-            if not p["value"]
+            if p["value"]
         }
         if fields:
             self._add_datapoint(fields)
