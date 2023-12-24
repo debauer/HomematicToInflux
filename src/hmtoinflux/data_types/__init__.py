@@ -7,4 +7,4 @@ from hmtoinflux.data_types.room import Room as Room
 from hmtoinflux.data_types.state import State as State
 
 
-InfluxDatapoint = dict[str, Any]
+

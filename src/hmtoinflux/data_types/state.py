@@ -1,7 +1,8 @@
 from __future__ import annotations
 
-from hmtoinflux.data_types import InfluxDatapoint
+from typing import Any
 
+InfluxDatapoint = dict[str, Any]
 
 class State:
     def __init__(
